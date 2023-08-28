@@ -1,11 +1,16 @@
 import React from 'react'
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "../index.css";
+import Todos from "./components/Todos";
+import Header from "./components/Header";
 
 
 function App() {
   return (
-    <div className='text-9xl text-center'>Hello Abhinav Pandey</div>
+    <React.Fragment>
+       <Header/>
+       <Todos/>
+    </React.Fragment>
   )
 }
 

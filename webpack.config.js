@@ -13,14 +13,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname,"dist"),
         filename: "bundle.js",
+        clean: true,
+        assetModuleFilename: '[name][ext]',
     },
 
     module: {
         rules :[
-            {
-               test: /\.svg$/,
-               use : 'svg-inline-loader',
-            },
+           
             {
                 test: /\.css$/i,
                 use: ["style-loader","css-loader","postcss-loader"],
@@ -33,6 +32,10 @@ module.exports = {
                         presets: ['@babel/preset-env','@babel/preset-react'],
                     },
                 }
+            },
+            {
+                test: /\.(jpe?g|jpg|png|gif|svg)$/i, 
+                type: "asset/resource",
             }
 
 

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ABHI2598/Todo-App#readme",
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "postcss": "^8.4.28",
     "postcss-preset-env": "^9.1.1",
