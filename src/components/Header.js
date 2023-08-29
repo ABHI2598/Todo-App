@@ -11,9 +11,12 @@ const Header = () => {
              <div>
                 <img className="w-full h-5/6" src={bgImage}/>
              </div>
-             <div className="absolute top-1/4 left-1/4">
+             <div className="absolute top-1/4 left-[30%]">
                   <h2 className="text-3xl font-serif text-white font-extrabold">T O D O</h2>
-                  <img  src={moon}/>
+                 
+             </div>
+             <div className="absolute top-1/4 left-[63%]">
+             <img  src={moon}/>
              </div>
              
              </div>
