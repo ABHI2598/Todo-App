@@ -3,7 +3,7 @@ import ThemeContext from "../context/ThemeContext";
 
 
 const Footer = () => {
-    const {darkMode, setDarkMode} = useContext(ThemeContext);
+    const {darkMode} = useContext(ThemeContext);
 
     return(
         <div className={darkMode ? "dark" : ""}>
