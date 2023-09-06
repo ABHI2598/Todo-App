@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import Favicon from "../assets/oval.png";
 import Todo from "./Todo";
 import { useDispatch, useSelector } from "react-redux";
 import { addTodo } from "../utils/TodoSlice";
-
+import ThemeContext from "../context/ThemeContext";
 
 const Todos = () => {
     const [text , setText] = useState("");
     const storedTodos = useSelector(store => store.todoSlice.todos);
+    const {darkMode, setDarkMode} = useContext(ThemeContext);
      
     const dispatch = useDispatch();
     const handleAdd = () =>{

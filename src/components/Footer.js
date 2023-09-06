@@ -1,11 +1,13 @@
-import React from "react";
-
+import React, {useContext} from "react";
+import ThemeContext from "../context/ThemeContext";
 
 
 const Footer = () => {
+    const {darkMode, setDarkMode} = useContext(ThemeContext);
+
     return(
-        <div className="bg-white w-full h-max">
-             <h2 className="text-black font-bold text-center">Made By Abhinav Pandey</h2>
+        <div className={darkMode ? "dark" : ""}>
+           <div className="dark:bg-gray-800 h-screen"></div>      
         </div>
     )
 }
