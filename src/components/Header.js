@@ -17,14 +17,14 @@ const Header = () => {
         <div className={darkMode ? "dark" : ""}>
              <div className="relative">
              <div >
-                <img className="w-full h-5/6"  src={imagePath}/>
+                <img className="w-full h-5/6 "  src={imagePath}/>
              </div>
              <div className="absolute top-1/4 left-[30%]">
                   <h2 className="text-3xl font-serif text-white font-extrabold">T O D O</h2>
                  
              </div>
              <div className="absolute top-1/4 left-[63%]">
-             <img className="cursor-pointer" src={icon} onClick={()=> setDarkMode(!darkMode)}/>
+             <img className="cursor-pointer " src={icon} onClick={()=> setDarkMode(!darkMode)}/>
              </div>
              
              </div>
